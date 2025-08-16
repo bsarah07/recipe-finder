@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import cohere
 import json
 app = Flask(__name__)
-COHERE_API_KEY = "9VFgevDjm7GuXZLPdDHPariuQVUpjZHeYpB8F4oG"
+COHERE_API_KEY = "" #get your own
 json_recipe = {}
 def generate_paragraph(ingredients):
     global json_recipe
