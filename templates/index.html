@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fridge Recipe Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>What is in your fridge and pantry right now?</h1>
+        <div class="input-area">
+            <input type="text" id="ingredients" placeholder="e.g. eggs, milk, cheese">
+            <button id="cookBtn">Cook up!</button>
+        </div>
+
+        <div id="recipe" class="recipe hidden">
+            <img id="recipe-img" src="" alt="Recipe Image">
+            <h2 id="recipe-title"></h2>
+            <p><strong>Servings:</strong> <span id="recipe-servings"></span></p>
+            <p><strong>Cooking Time:</strong> <span id="recipe-time"></span></p>
+            <p id="recipe-description"></p>
+            <h3>Steps:</h3>
+            <ol id="recipe-steps"></ol>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
